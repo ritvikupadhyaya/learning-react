@@ -11,10 +11,11 @@ class Background extends Component {
     render() {
         const stylesObj = {
           background: this.state.color,
-          height: '100vh'
+          height:'100%'
         };
         return (
             <div id="Background" style={stylesObj}>
+              {this.props.children}
             </div>
         );
     }
